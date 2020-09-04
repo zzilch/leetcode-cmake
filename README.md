@@ -3,10 +3,10 @@
 A CMake project template for LeetCode.
 
 **Featrues**
-- CMake project
-- Local playground
-- Unit test and benchmark
-- Cross platform
+ - CMake project
+ - Local playground
+ - Unit test and benchmark
+ - Cross platform
 
 ## File Structure
 ```
@@ -88,23 +88,23 @@ You can also open this directory using VSCode with CMake Tools extension, or ope
 
 ### 2. Add new problems
 
-- Problem directory: `src/LXXX`
-- Problem header: `src/LXXX.h`, include `leetcode.h`
-- [Optional] Playground source: `src/LXXX.cpp`, include `LXXX.h`
-- [Optional] Test source: `src/TestLXXX.cpp`, include `LXXX.h` and `catch.h`
-- Rebuild
+ - Problem directory: `src/LXXX`
+ - Problem header: `src/LXXX.h`, include `leetcode.h`
+ - [Optional] Playground source: `src/LXXX.cpp`, include `LXXX.h`
+ - [Optional] Test source: `src/TestLXXX.cpp`, include `LXXX.h` and `catch.h`
+ - Rebuild
 
 Read `TestL0001.cpp` and `TestL0002.cpp` to learn hwo to write basic catch test cases. Refer to catch [tutorial](https://github.com/catchorg/Catch2/blob/master/docs/tutorial.md) and [benchmark](https://github.com/catchorg/Catch2/blob/master/docs/benchmarks.md) for more complicated usage.
 
 ## Leetcode Header
 Some widely used leetcode structs and functions are inlucded in `src/include/leetcode.h`
 
-- ListNode/TreeNode
-- trimLeftTrailingSpaces/trimRightTrailingSpaces
-- stringToInteger/stringToString/boolToString
-- stringToIntegerVector/integerVectorToString
-- stringToListNode/listNodeToString
-- stringToTreeNode
+ - ListNode/TreeNode
+ - trimLeftTrailingSpaces/trimRightTrailingSpaces
+ - stringToInteger/stringToString/boolToString
+ - stringToIntegerVector/integerVectorToString
+ - stringToListNode/listNodeToString
+ - stringToTreeNode
 
 Used STL: `iostream`/`sstream`/`cstdlib`/`cassert`/`string`/`vector`/`queue`
 
@@ -129,6 +129,6 @@ automatically re-run when removing or adding files. Even though the `CONFIGURE_D
     Change the line `set(CMAKE_CXX_STANDARD 20)` in the top level `CMakeLists.txt`.
 
 ## Acknowledge
-- [CMake](https://github.com/Kitware/CMake)
-- [Catch2](https://github.com/catchorg/Catch2)
-- [LeetCode](https://leetcode.com/)
+ - [CMake](https://github.com/Kitware/CMake)
+ - [Catch2](https://github.com/catchorg/Catch2)
+ - [LeetCode](https://leetcode.com/)
