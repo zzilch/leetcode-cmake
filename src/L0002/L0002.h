@@ -1,0 +1,32 @@
+#include "leetcode.h"
+
+class Solution
+{
+public:
+    ListNode *addTwoNumbers(ListNode *l1, ListNode *l2)
+    {
+        ListNode *l = new ListNode{0};
+        ListNode *p = l;
+        int carry = 0;
+        for (; l1 != nullptr || l2 != nullptr;)
+        {
+            int sum = carry;
+            if (l1 != nullptr)
+            {
+                sum += l1->val;
+                l1 = l1->next;
+            }
+            if (l2 != nullptr)
+            {
+                sum += l2->val;
+                l2 = l2->next;
+            }
+            p->next = new ListNode{sum % 10};
+            carry = sum / 10;
+            p = p->next;
+        }
+        if (carry > 0)
+            p->next = new ListNode{carry};
+        return l->next;
+    }
+};
