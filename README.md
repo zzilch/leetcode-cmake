@@ -46,7 +46,9 @@ Test project D:/code/learn_cmake/build
 
 100% tests passed, 0 tests failed out of 1
 
-$ ./src/Debug/TestL0001 # run all tests and benchmark in problem L001
+# run all tests and benchmark in problem L001
+$ ./src/Debug/TestL0001 # Windows, multi-configure build
+$ ./src/TestL0001 # Linux, single-configure build
 -------------------------------------------------------------------------------
 L0001_Benchmark
 -------------------------------------------------------------------------------
@@ -73,7 +75,9 @@ Hash Map2                                      100             1    860.129 ms
 ===============================================================================
 All tests passed (9 assertions in 2 test cases)
 
-$ ./src/L0001/L0001 # run playground L0001
+# run playground for problem L0001
+$ ./src/Debug/L0001 # Windows, multi-configure build
+$ ./src/L0001 # Linux, single-configure build
 [2, 7, 11, 15] 
 9
 [0, 1]
