@@ -2,7 +2,7 @@
 
 A CMake project template for LeetCode.
 
-**Featrues**
+**Features**
  - CMake project
  - Local playground
  - Unit test and benchmark
